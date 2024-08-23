@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head> 
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#about" class="act">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">My Portfolio</a></li>
+                <li class="hideOnMobile"><a href="#home" class="act">About</a></li>
+                <li class="hideOnMobile"><a href="#education">Education</a></li>
+                <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li onclick=showSidebar() class="menu_icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>   
+        </nav>
+
+        <script>
+            
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+
+        </script>
+
+    </header>
+
+    <main>
+
+        <div class="home-smi">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>  
+
+        <div class="greet content">
+
+            <div class="greet-content">
+
+                <h3 class="title">Welcome to</h3>
+                <h1>My Portfolio!</h1>
+
+            </div>
+
+        </div>
+
+        <section class="home content" id="about">
+
+            <div class="home-content">
+
+                <div class="img_prof">
+                    <img src="pict/Profile.png" alt="img">
+                </div>
+    
+                <div class="text-home">
+
+                    <h1>Hi there, I'm <span id="myName">Abidal Farzan</span></h1>
+    
+                    <h3 class="typing-text">I'm a <span id="special">Full-Stack  Developer</span></h3>
+    
+                    <p>
+                    Hello There, Fellas 👋!
+
+                    My name is Abidal Farzan Rosyidi. Imma student from IDN Boarding School Pamijahan Bogor,
+                    I like to Designing, Coding, and other IT things.
+                    
+                    So, Enjoy my Portfolio!</p>
+    
+                    <div class="home-btn">
+                        <a href="#">Hire Me!</a>
+                        <a href="#">Download CV</a>
+                    </div>  
+
+                </div>          
+
+            </div>
+    
+        </section>
+
+        <section class="education content" id="education">
+
+            <h2 class="title">My <span>Education</span></h2>
+            
+            <div class="edu-row">
+
+                <div class="edu-column">
+
+                    <h3 class="edu-title">Education</h3>
+
+                    <div class="edu-box">
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> 2012-2015</i></div>
+                                <h3>Nurul Rohmah - Kindergarten</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> 2015-2021</i></div>
+                                <h3>Mutiara Iman - Islamic Elementary School</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> 2021-2024</i></div>
+                                <h3>IDN Boarding School - Islamic Junior Highschool</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> Recent</i></div>
+                                <h3>IDN Boarding School - Islamic Highschool</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                    </div>                
+
+                </div>
+
+                <div class="edu-column">
+
+                    <h3 class="edu-title">Experience</h3>
+
+                    <div class="edu-box">
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> 2012-2015</i></div>
+                                <h3>Nurul Rohmah - Kindergarten</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> 2015-2021</i></div>
+                                <h3>Mutiara Iman - Islamic Elementary School</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> 2021-2024</i></div>
+                                <h3>IDN Boarding School - Islamic Junior Highschool</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                        <div class="edu-content">
+                            <div class="content">
+
+                                <div class="year"><i class='bx bxs-calendar'> Recent</i></div>
+                                <h3>IDN Boarding School - Islamic Highschool</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae consequuntur vitae, soluta dolores laudantium dolorum voluptas excepturi tenetur perspiciatis.</p>
+                            
+                            </div>
+                        </div>
+
+                    </div>                
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="skills content" id="skills">
+
+            <h2 class="title">My <span>Skills</span></h2>
+            
+            <div class="container">
+
+                <div class="skill-container">
+
+                    <h3 class="skill-name">Code <span>Skills</span></h3>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">HTML</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per">
+                                <span class="tooltip">90%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">CSS</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per css">
+                                <span class="tooltip">70%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">JavaScript</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per javascript">
+                                <span class="tooltip">10%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">NodeJS</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per nodejs">
+                                <span class="tooltip">5%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+                <div class="skill-container">
+
+                    <h3 class="skill-name">Design <span>Skills</span></h3>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">UI/UX Designs</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per figma">
+                                <span class="tooltip">100%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">Graphic Design</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per im">
+                                <span class="tooltip">50%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">3D Blender</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per blender">
+                                <span class="tooltip">60%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="skills-box">
+    
+                        <h3 class="my-skill">Video Editing</h3>
+    
+                        <div class="skill-bar">
+                            <div class="skill-per ve">
+                                <span class="tooltip">45%</span>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="contact-container">
+
+                <h2 class="title">Contact Me</h2>
+
+                <p class="section-subtitle">I'd love to hear from you. Please fill out the form below to get in touch.</p>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="p_f">Copyright &copy; 2024 by Abidal Farzan | All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
